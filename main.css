@@ -1,0 +1,73 @@
+body {
+  background-color: #54ace3;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+#test-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#textbox {
+  font-size: 30px;
+  height: 4em;
+  width: 90%;
+  max-width: 1200px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  max-height: 4em;
+  line-height : 2em;
+  overflow: hidden;
+}
+
+#input-area {
+  display: grid;
+  grid-template-columns: 8fr 1fr 1fr;
+  gap: 8px;
+  width: 50%;
+}
+
+#timer {
+  font-size: 36px;
+  text-align: center;
+  background-color: lightgrey;
+  border-radius: 5px
+}
+
+#input {
+  font-size: 18px;
+  height: 2em;
+  border: 2px solid black;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#textbox p {
+  display: inline;
+}
+
+#curr-word {
+  background-color: lightgrey;
+}
+
+.highlight-incorrect {
+  background-color: red !important;
+}
+
+.correct-word {
+  color: green;
+}
+
+.incorrect-word {
+  color: red;
+}
