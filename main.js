@@ -93,7 +93,7 @@ class TypingTest {
           }, 1000)
         }
         const typed = e.target.value;
-        this.charTyped++;
+        this.charsTyped++;
         const currWord = this.words[this.currWordIdx];
         const currWordElem = document.querySelector("#curr-word");
         if (typed.charAt(typed.length - 1) === " ") {
