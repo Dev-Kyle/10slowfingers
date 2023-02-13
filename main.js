@@ -33,6 +33,7 @@ class TypingTest {
   reset() {
     this.currWordIdx = 0;
     this.correctChars = 0;
+    this.charsTyped = 0;
     this.totalChars = 0;
     this.timeLeft = this.totalTime;
     document.querySelector("#timer").textContent = this.timeLeft;
@@ -67,7 +68,7 @@ class TypingTest {
   }
   
   gameOver() {
-    alert(`Your WPM was ${Math.floor(this.correctChars / 5 * 60 / this.totalTime)}. Your accuracy was ${Math.round(this.correctChars / this.totalChars * 10000) / 100}%.`);
+    alert(`Your WPM was ${Math.floor(this.charsTyped / 5 * 60 / this.totalTime)}. Your accuracy was ${Math.round(this.correctChars / this.totalChars * 10000) / 100}%.`);
     this.reset();
   }
   
@@ -92,6 +93,7 @@ class TypingTest {
           }, 1000)
         }
         const typed = e.target.value;
+        this.charTyped++;
         const currWord = this.words[this.currWordIdx];
         const currWordElem = document.querySelector("#curr-word");
         if (typed.charAt(typed.length - 1) === " ") {
