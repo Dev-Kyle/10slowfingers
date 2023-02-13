@@ -68,9 +68,14 @@ class TypingTest {
   }
   
   gameOver() {
+    if ((Math.round(this.correctChars / this.totalChars * 10000) / 100) < 65) {
+       alert(`Your accuracy was too low! Please try again.`)
+      this.reset();
+    } else {
     alert(`Your WPM was ${Math.floor(this.charsTyped / 5 * 60 / this.totalTime)}. Your accuracy was ${Math.round(this.correctChars / this.totalChars * 10000) / 100}%.`);
     this.reset();
   }
+}
   
   decrementTimer() {
     this.timeLeft--;
