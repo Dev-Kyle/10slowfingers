@@ -41,6 +41,7 @@ class TypingTest {
     document.querySelector("#input").value = "";
     clearInterval(this.timer);
     this.timer = undefined;
+    document.getElementById("input").focus();
   }
   
   initializeTest() {
