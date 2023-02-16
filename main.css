@@ -2,6 +2,13 @@ body {
   background-color: #54ace3;
 }
 
+.settime {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+}
+
 .container {
   width: 100%;
   display: flex;

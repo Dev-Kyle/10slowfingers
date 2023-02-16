@@ -91,6 +91,26 @@ class TypingTest {
       .addEventListener("click", (_) => {
         this.reset();
       });
+    document.getElementById("15")
+      .addEventListener("click", (_) => {
+        this.totalTime = 15;
+        this.reset();
+      });
+    document.getElementById("30")
+      .addEventListener("click", (_) => {
+        this.totalTime = 30;
+        this.reset();
+      });
+    document.getElementById("45")
+      .addEventListener("click", (_) => {
+        this.totalTime = 45;
+        this.reset();
+      });
+    document.getElementById("60")
+      .addEventListener("click", (_) => {
+        this.totalTime = 60;
+        this.reset();
+      });
     document.querySelector("#input")
       .addEventListener("input", (e) => {
         if (this.timer === undefined) {
