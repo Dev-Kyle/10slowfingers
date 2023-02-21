@@ -91,6 +91,17 @@ class TypingTest {
       .addEventListener("click", (_) => {
         this.reset();
       });
+ 
+    Array.from(document.getElementsByClassName("settime")).forEach((el) => {
+      el.addEventListener("click", (_) => {
+        Array.from(document.getElementsByClassName("settime")).forEach((el) => {
+           el.classList.remove("active");
+        });
+        el.classList.add("active");
+        this.totalTime = parseInt(el.textContent);
+        this.reset();
+      })});
+
     document.querySelector("#input")
       .addEventListener("input", (e) => {
         if (this.timer === undefined) {

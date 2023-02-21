@@ -2,6 +2,28 @@ body {
   background-color: #54ace3;
 }
 
+#buttontimes {
+  display: flex;
+  justify-content: flex-end;
+  width: 85%;
+}
+
+.settime {
+  background: none;
+  outline: none;
+  border: none;
+  color: grey;
+}
+
+.settime:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.active {
+  color: black;
+}
+
 .container {
   width: 100%;
   display: flex;
