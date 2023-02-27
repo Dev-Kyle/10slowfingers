@@ -23,7 +23,7 @@ class TypingTest {
   totalChars;
   timeLeft;
   timer;
-  totalTime = 30;
+  totalTime = 60;
   
   constructor() {
     this.reset();
